@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestión de Producto</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/producto.css">
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <br><h3>Gestión de Producto</h3>
+      <hr>
+      <a href="#" id="addCategory">Agregar Categoría</a>
+      <a href="#" id="addModel">Agregar Modelo</a>
+      <a href="#" id="addBrand">Agregar Marca</a>
+      <a href="#" id="addProduct">Agregar Producto</a>
+      <hr />
+      <a href="#" id="viewCategories">Ver Categorías</a>
+      <a href="#" id="viewModels">Ver Modelos</a>
+      <a href="#" id="viewBrands">Ver Marcas</a>
+      <a href="#" id="viewProducts">Ver Productos</a>
+      <br/><hr><a href="index.html" class="btn btn-secondary" type="button">Atras</a>
+      
+    </div>
+    <div class="content" id="dynamicContent">
+      <h1 class="title">Sistema de Gestión de Productos</h1>
+      <br />
+      <p>
+        Bienvenido, utiliza el menú de la izquierda para agregar un nuevo
+        producto, marca, modelo o categoría.
+      </p>
+      <p>
+        Para visualizar los productos, marca, modelo o categoria haz clic en el
+        menu de la izquierda en la parte inferior.
+      </p>
+      <!-- El contenido dinámico se cargará aquí -->
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../scripts/newCate.js"></script>
+    <script src="../scripts/newMarca.js"></script>
+    <script src="../scripts/newModel.js"></script>
+    <script src="../scripts/newProducto.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Ventas</title>
+  <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/ventas.css">
+</head>
+<body>
+  <div class="sidebar">
+    <br><h4>Ver Ventas Realizadas</h4><hr>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" onclick="showContent('verVentas')">Ver Ventas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="showContent('mostrarVentasPorProducto')">Ventas por Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="showContent('mostrarVentasPorMarca')">Ventas por Marcas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="showContent('mostrarVentasPorCategoria')">Ventas por Categorías</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="showContent('mostrarVentasPorModelo')">Ventas por Modelos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="showContent('mostrarCantidadProductosVendidos')">Cantidad de Productos Vendidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="showContent('mostrarProductosMasVendidos')">Productos Más Vendidos</a>
+      </li>
+      <hr>
+      <a href="index.html" class="btn btn-secondary" type="button">Atrás</a>
+    </ul>
+  </div>
+
+  <div class="content">
+    <hr><br>
+    <div id="contenido">
+      <!-- Aquí se mostrará el contenido -->
+    </div>
+  </div>
+  <script src="../scripts/ventasProd.js"></script>
+</body>
+</html>

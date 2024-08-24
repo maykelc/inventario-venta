@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ventas</title>
+    <link rel="stylesheet" href="../styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/carrito.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <h4 class="">Menú</h4>
+      <ul class="nav flex-column">
+        <hr />
+        <a href="index.html" class="btn btn-secondary" type="button">Atras</a>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card mt-5 cardito">
+            <div class="card-header text-center">
+              <h4>Agregar Producto al Carrito</h4>
+            </div>
+            <div class="card-body">
+              <form id="productoForm">
+                <div class="form-group mb-2">
+                  <label for="code_barra" class="mb-2"
+                    >Código de Barra del Producto</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="code_barra"
+                    placeholder="Escanea el código de barra del producto"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block p-1">
+                  Agregar Producto
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card mt-5 cardito">
+            <div class="card-header text-center">
+              <h4>Carrito de Productos</h4>
+            </div>
+            <div class="card-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Descripcion del producto</th>
+                    <th>Valor</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody id="carrito">
+                  <!-- Aquí se agregarán los productos dinámicamente -->
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th colspan="3" class="text-right">Total:</th>
+                    <th id="total">0</th>
+                  </tr>
+                </tfoot>
+              </table>
+              <button class="btn btn-success btn-block">Generar Venta</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/carrito.js"></script>
+  </body>
+</html>

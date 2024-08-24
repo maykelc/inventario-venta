@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  background: url(../img/fishtank.jpg);
+  background-size: cover;
+
+  height: 100%;
+}
+
+.cardito {
+  opacity: 0.8;
+}
+
+.cardito:hover {
+  opacity: 0.9;
+}
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  padding: 15px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.content {
+  margin-left: 250px;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.btn {
+  margin-right: 5px;
+}

@@ -1,0 +1,14 @@
+body {
+  background: url(../img/bird.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.cardito {
+  opacity: 0.8;
+}
+
+.cardito:hover {
+  opacity: 1;
+}
